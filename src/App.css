@@ -1,3 +1,44 @@
+html {
+  height: 100%;
+  background-image: url(https://images.unsplash.com/photo-1554521838-fbe01ad99c31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1559&q=80);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
 .App {
   text-align: center;
+}
+
+#homepage {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  left: 0px;
+  bottom: 0px;
+  padding-top: 100px;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  background-color: transparent;
+  z-index: 10;
+}
+
+h1 {
+  padding-left: 10px;
+  font-size: 40px;
+}
+
+a {
+  padding: 10px;
+  font-size: 25px;
+}
+
+#logo {
+  height: 50px;
+  width: 50px;
 }
