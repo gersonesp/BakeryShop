@@ -19,6 +19,13 @@ html {
   padding-top: 100px;
 }
 
+#logo-name {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-left: 3%;
+}
+
 nav {
   display: flex;
   flex-direction: row;
@@ -26,6 +33,14 @@ nav {
   position: absolute;
   background-color: transparent;
   z-index: 10;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  margin-right: 3%;
 }
 
 h1 {
