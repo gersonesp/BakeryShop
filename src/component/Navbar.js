@@ -15,18 +15,6 @@ const Navbar = () => {
           </Link>
           <h1>Yums Bakery Shop</h1>
         </div>
-        <div className="nav-links">
-          <div>
-            <Link to="/menu" id="link">
-              {" "}
-              Menu{" "}
-            </Link>
-            <Link to="/aboutus" id="link">
-              {" "}
-              About Us{" "}
-            </Link>
-          </div>
-        </div>
       </nav>
     </div>
   );
