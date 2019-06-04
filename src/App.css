@@ -1,22 +1,72 @@
-html {
-  height: 100%;
-  background-image: url(https://images.unsplash.com/photo-1554521838-fbe01ad99c31?ixlib=rb-1.2.1&auto=format&fit=crop&w=1559&q=80);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-}
-
 .App {
   text-align: center;
+  background-color: teal;
+  position:absolute;
+  top:0;
+  left:0;
+  bottom:0;
+  right:0;
+  height:100%;
+  width:100%;
 }
 
-#homepage {
-  height: 100%;
+.homepage {
+  right: 0;
+  display: flex;
+  flex-direction: row;
   width: 100%;
-  position: relative;
-  left: 0px;
-  bottom: 0px;
-  padding-top: 100px;
+  height: 100%;
+}
+
+.homepage-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.homepage-button a {
+  text-decoration: none;
+  font-family: cursive;
+}
+
+.homepage-button a:hover {
+  background-color: grey;
+}
+
+.menu-button {
+  left: 0;
+  width: 50%;
+  background-image: url("https://images.unsplash.com/photo-1517433367423-c7e5b0f35086?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1546&q=80");
+  background-size: cover;
+  /* text-decoration-color: white;
+  border-radius: 10%;
+  background-repeat: no-repeat; */
+}
+
+#logo-name h1 {
+  font-family: 'Luckiest Guy', cursive;
+  color: white;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.menu-button a {
+  color: white;
+  font-size: 50px;
+  text-shadow: 5px 5px #000000;
+}
+
+.aboutus-button {
+  right: 0;
+  background-color: red;
+  width: 50%;
+  background-image: url("https://images.unsplash.com/photo-1554587293-d010b477b5a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1534&q=80");
+  background-size: cover;
+  text-shadow: 3px 3px #ffffff;
+}
+
+.aboutus-button a {
+  color: black;
+  font-size: 50px;
 }
 
 #logo-name {
@@ -30,17 +80,11 @@ nav {
   display: flex;
   flex-direction: row;
   align-items: center;
-  position: absolute;
-  background-color: transparent;
-  z-index: 10;
   width: 100%;
   justify-content: space-between;
-}
-
-.nav-links {
-  display: flex;
-  flex-direction: row;
-  margin-right: 3%;
+  z-index: 1;
+  position: absolute;
+  /* background-color: yellow; */
 }
 
 h1 {
@@ -56,4 +100,8 @@ a {
 #logo {
   height: 50px;
   width: 50px;
+}
+
+#navContainer {
+  background-color: rgba(255,255,255,.5)
 }

@@ -1,16 +1,23 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 class Homepage extends Component {
   //button is how to update html background image 
   //use and change later
   render() {
     return (
-      <div id="homepage">
-        <h1>Hello World</h1>
-        <button type='submit' onClick={() => {
-          document.documentElement.style.backgroundImage = "url(https://images.unsplash.com/photo-1555541948-826ee9ab3cf8?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1547&q=80)"
-        }}> CLICK ME</button>
-      </div>);
+      <div className="homepage">
+        <div className="homepage-button menu-button">
+          <Link to="/menu">
+            View Our Menu
+          </Link>
+        </div>
+        <div className="homepage-button aboutus-button">
+          <Link to="/aboutus">
+            About Us
+          </Link>
+        </div>
+    </div>);
   }
 }
 
